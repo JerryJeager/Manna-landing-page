@@ -215,28 +215,59 @@ main{
     justify-content: space-between;
 }
 .card{
-    width: 23%;
-    height: 70px;
+    width: 24%;
+    height: 80px;
     background: #D9D9D9;
     box-shadow: 5px 4px 8px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     padding: .3em 0;
+}
+.card-info{
+    width: 100%;
+}
+.card-info h5, p{
+    text-align: center;
+}
+.card-info h5{
+    font-size: 6px;
+    font-weight: 400;
+    line-height: 12px;
+    font-family: 'Jockey One', sans-serif;
+}
+.card-info p{
+    font-size: 7px;
+    font-family: 'Averia Sans Libre', cursive;
+    font-weight: 400;
 }
 .card-img{
     width: 10px;
     height: 17px;
     margin: 0 auto;
 }
-.card-img img{
-    width: 100%;
-}
 .card-border{
-    width: 14px;
-    height: 14px;
+    width: 13px;
+    height: 13px;
+    padding: .1em;
     border: 1px solid hsla(43, 98%, 48%, 1);
     border-top-right-radius: 50%;
+    position: relative;
 }
 .healthy-eating-vector{
-    transform: translateY(-5px);
+    transform: translateY(-6px);
     background-color: transparent;
+    transform: scaleX(100px);
+    transform: translateX(5px);
+    transform: translateY(-6px);
+    width: 12px;
+    z-index: 3;
+    background-color: #D9D9D9;
+}
+.other-img{
+    width: 13px;
+    height: 13px;
+    margin-bottom: .19em;
+}
+.other-img img{
+    width: inherit;
+    height: inherit;
 }
