@@ -148,7 +148,6 @@ main{
     border-radius: 10px 10px 0  10px;
     width: 150px;
     height: 160px;
-    background: linear-gradient(315deg, transparent, rgba(17, 17, 17, 0.8));
     padding-top: .8em;
     padding-left: .5em;
 }
@@ -244,23 +243,22 @@ main{
     height: 17px;
     margin: 0 auto;
 }
-.card-border{
-    width: 13px;
-    height: 13px;
-    padding: .1em;
-    border: 1px solid hsla(43, 98%, 48%, 1);
-    border-top-right-radius: 50%;
-    position: relative;
-}
 .healthy-eating-vector{
     transform: translateY(-6px);
     background-color: transparent;
     transform: scaleX(100px);
     transform: translateX(5px);
     transform: translateY(-6px);
-    width: 12px;
+    width: 11px;
+    height: 7px;
     z-index: 3;
     background-color: #D9D9D9;
+}
+.first-img{
+    height: 12px;
+    border-width: 50% 50% 100% 100%;
+    border: 1px solid hsla(43, 98%, 48%, 1);
+    margin-bottom: 3px;
 }
 .other-img{
     width: 13px;
