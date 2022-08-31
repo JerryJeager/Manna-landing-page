@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:wght@300&family=Jockey+One&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -5,12 +6,19 @@
 }
 html, body{
     scroll-behavior: smooth;
+    /* scroll-padding-top: var(--scroll-padding, 90px); */
+}
+body{
+    scroll-padding-top: var(--scroll-padding, 150px);
 }
 header{
     background-color: #ffffff;
     height: auto;
     width: 100%;
     padding-top: .8em;
+    padding-bottom: .4em;
+    position: fixed;
+    z-index: 1;
 }
 #header-contents{
     width: 90%;
@@ -29,7 +37,7 @@ header{
 .hamburger-menu{
     position: fixed;
     right: 21px;
-    top: .8rem;
+    top: 1rem;
     width: 30px;
     height: 20px;
     display: flex;
@@ -55,7 +63,7 @@ header{
 }
 .navbar{
     width: 150px;
-    height: 70%;
+    height: 100%;
     background-color: #d9d9d9;
     /* border-radius: 0 0 0 60%; */
     position: fixed;
@@ -67,8 +75,8 @@ header{
     right: 0;
 }
 .nav-list{
-    padding-top: 2em;
-    height: 90%;
+    padding-top: 2.5em;
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -106,4 +114,129 @@ header{
 .nav-link:hover::before,
 .nav-link:hover::after{
     transform: scaleX(1);
+}
+main{
+    height: 100vh;
+    width: 100%;
+    background-color: #f5f5f5; 
+}
+#intro{
+    width: 100%;
+    position: relative;
+}
+.intro-bg{
+    width: 230px;
+    height: 320px;
+    background-color: rgba(17, 17, 17, .8);
+    border-radius: 0 10px 10px 0;
+    position: absolute;
+    left: 0px;
+    top: 70px;
+}
+.intro-contents-container{
+    width: 100vw;
+    height: auto;
+}
+.intro-contents{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+.healthy-eating{
+    border-radius: 10px 10px 0  10px;
+    width: 150px;
+    height: 160px;
+    background: linear-gradient(315deg, transparent, rgba(17, 17, 17, 0.8));
+    padding-top: .8em;
+    padding-left: .5em;
+}
+.healthy-eating h4{
+    color: hsla(0, 0%, 100%, 1);
+    font-family: 'Averia Sans Libre', cursive;
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 16px;
+}
+.heading{
+    position: relative;
+}
+.heading::after{
+    content: "";
+    height: 1px;
+    margin-left: 2px;
+    width: 25px;
+    background-color: hsla(43, 100%, 47%, 0.7);
+    position: absolute;
+}
+.healthy-eating-info{
+    height: auto;
+    width: 130px;
+}
+.healthy-eating h2{
+    color: hsla(43, 100%, 47%, 0.7);
+    font-weight: 400;
+    line-height: 20px;
+    font-family: 'Jockey One', sans-serif;
+    font-size: 15px;
+}
+.healthy-eating p{
+    color: hsla(0, 0%, 100%, 1);
+    font-family: 'Averia Sans Libre', cursive;
+    font-size: 7px;
+    line-height: 13px;
+}
+.family{
+    width: 200px;
+    height: 150px;
+    background: linear-gradient(315deg, transparent, hsla(43, 98%, 48%, 0.4));
+    float: right;
+    transform: translateY(-100px);
+    border-radius: 10px;
+    padding: 15px 10px;
+}
+.family-img{
+    width: 100%;
+    height: 100%;
+}
+.family-img img{
+    width: inherit;
+    max-width: 100%;
+    border-radius: 10px;
+}
+.intro-cards{
+    /* margin-top: .9em; */
+    width: 326px;
+    height: auto;
+    transform: translateY(-123px);
+    /* z-index: 5; */
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    width: 23%;
+    height: 70px;
+    background: #D9D9D9;
+    box-shadow: 5px 4px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: .3em 0;
+}
+.card-img{
+    width: 10px;
+    height: 17px;
+    margin: 0 auto;
+}
+.card-img img{
+    width: 100%;
+}
+.card-border{
+    width: 14px;
+    height: 14px;
+    border: 1px solid hsla(43, 98%, 48%, 1);
+    border-top-right-radius: 50%;
+}
+.healthy-eating-vector{
+    transform: translateY(-5px);
+    background-color: transparent;
 }
