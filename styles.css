@@ -6,10 +6,8 @@
 }
 html, body{
     scroll-behavior: smooth;
+    background-color: #f5f5f5;
     /* scroll-padding-top: var(--scroll-padding, 90px); */
-}
-body{
-    scroll-padding-top: var(--scroll-padding, 150px);
 }
 header{
     background-color: #ffffff;
@@ -118,7 +116,6 @@ header{
 main{
     height: 100vh;
     width: 100%;
-    background-color: #f5f5f5; 
 }
 #intro{
     width: 100%;
@@ -147,8 +144,10 @@ main{
 }
 .healthyEating-and-family{
     max-width: 100%;
+    width: 100%;
     height: 190px;
     display: flex;
+    justify-content: space-between;
 }
 .family-wrapper{
     display: flex;
@@ -283,4 +282,80 @@ main{
 .other-img img{
     width: inherit;
     height: inherit;
+}
+#Our-best-programs-section{
+    width: 100%;
+    height: auto;
+}
+.Our-best-programs{
+    width: 100%;
+    margin-top: 2em;
+    height: 500px;
+    background: linear-gradient(to right, #f5f5f5 0%, #f5f5f5 28.3%,  hsla(0, 0%, 7%, 0.6) 28.3%, hsla(0, 0%, 7%, 0.6) 100% );
+}
+.best-programs-contents{
+    width: 90%;
+    margin: 0 auto;
+}
+.best-programs-img{
+    height: 150px;
+    background: linear-gradient(hsla(0, 0%, 0%, 0.7), hsla(0, 0%, 0%, 0.7)), url('./images/mana imgs including bgs/bestPrograms.jpeg') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-family: 'Jockey One', sans-serif;
+    font-weight: 400;
+    color: hsla(43, 100%, 47%, 0.7);
+    line-height: 40px;
+    letter-spacing: 1px;
+}
+.weight-loss-container{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: flex-end;
+}
+.weight-loss{
+    width: 90%;
+    height: 350px;
+    display: flex;
+}
+.weight-loss-card-bg{
+    width: 170px;
+    height: 150px;
+    background: linear-gradient(139.69deg, rgba(238, 172, 0, 0.5) 36.23%, rgba(238, 172, 0, 0) 81.16%);
+    border-radius: 10px;
+    padding: 7px 5px 7px 5px;
+}
+.weight-loss-card{
+    margin: auto;
+    width: 150px;
+    height: 130px;
+    border-radius: 10px;
+    background-color: hsla(0, 0%, 23%, 1);
+    padding: 6px 4px 6px 4px;
+}
+.weight-loss-card h2{
+    color: hsla(0, 0%, 100%, 1);
+    font-size: 12px;
+    text-align: left;
+    font-family: 'Jockey One', sans-serif;
+    font-weight: 400;
+}
+.weight-loss-card p{
+    color: hsla(0, 0%, 100%, .8);
+    font-size: 8px;
+    font-family: 'Averia Sans Libre', cursive;
+}
+.full-schedule{
+    display: flex;
+    justify-content: center;
+}
+.weight-loss-card button{
+    color: hsla(43, 98%, 48%, 0.8);
+    background: none;
+    border: none;
+    font-size: 11px;
+    font-family: 'Jockey One', sans-serif;
 }
