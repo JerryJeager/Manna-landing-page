@@ -122,11 +122,12 @@ main{
 }
 #intro{
     width: 100%;
+    height: 383px;
     position: relative;
 }
 .intro-bg{
     width: 230px;
-    height: 320px;
+    height: 310px;
     background-color: rgba(17, 17, 17, .8);
     border-radius: 0 10px 10px 0;
     position: absolute;
@@ -144,17 +145,30 @@ main{
     padding-top: 2em;
     padding-bottom: 2em;
 }
+.healthyEating-and-family{
+    max-width: 100%;
+    height: 190px;
+    display: flex;
+}
+.family-wrapper{
+    display: flex;
+    align-items: flex-end;
+    overflow: visible;
+    transform: translateX(-12px);
+}
 .healthy-eating{
     border-radius: 10px 10px 0  10px;
-    width: 150px;
+    width: 165px;
+    min-width: 165px;
     height: 160px;
     padding-top: .8em;
     padding-left: .5em;
+    background: linear-gradient(315deg, transparent, rgba(17, 17, 17, 0.8));
 }
 .healthy-eating h4{
     color: hsla(0, 0%, 100%, 1);
     font-family: 'Averia Sans Libre', cursive;
-    font-size: 8px;
+    font-size: 9px;
     font-weight: 400;
     line-height: 16px;
 }
@@ -165,35 +179,38 @@ main{
     content: "";
     height: 1px;
     margin-left: 2px;
-    width: 25px;
+    width: 28px;
     background-color: hsla(43, 100%, 47%, 0.7);
     position: absolute;
 }
 .healthy-eating-info{
     height: auto;
-    width: 130px;
+    width: 140px;
 }
 .healthy-eating h2{
     color: hsla(43, 100%, 47%, 0.7);
     font-weight: 400;
     line-height: 20px;
     font-family: 'Jockey One', sans-serif;
-    font-size: 15px;
+    font-size: 17px;
 }
 .healthy-eating p{
     color: hsla(0, 0%, 100%, 1);
     font-family: 'Averia Sans Libre', cursive;
-    font-size: 7px;
+    font-size: 8px;
     line-height: 13px;
 }
 .family{
-    width: 200px;
-    height: 150px;
+    width: 182px;
+    min-width: 182px;
+    height: 136px;
     background: linear-gradient(315deg, transparent, hsla(43, 98%, 48%, 0.4));
-    float: right;
-    transform: translateY(-100px);
     border-radius: 10px;
-    padding: 15px 10px;
+    padding: 13px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .family-img{
     width: 100%;
@@ -205,11 +222,9 @@ main{
     border-radius: 10px;
 }
 .intro-cards{
-    /* margin-top: .9em; */
-    width: 326px;
+    transform: translateY(-16.5px);
+    width: 98%;
     height: auto;
-    transform: translateY(-123px);
-    /* z-index: 5; */
     display: flex;
     justify-content: space-between;
 }
