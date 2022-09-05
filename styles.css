@@ -16,6 +16,7 @@ header{
     padding-top: .8em;
     padding-bottom: .4em;
     position: fixed;
+    top: 0;
     z-index: 10;
 }
 #header-contents{
@@ -331,7 +332,7 @@ main{
 .Our-best-programs{
     width: 100%;
     margin-top: 2em;
-    height: 1160px;
+    height: 1135px;
     background: linear-gradient(to right, #f5f5f5 0%, #f5f5f5 28.3%,  hsla(0, 0%, 7%, 0.6) 28.3%, hsla(0, 0%, 7%, 0.6) 100% );
     /* border: 2px solid green; */
 }
@@ -352,6 +353,20 @@ main{
     line-height: 40px;
     letter-spacing: 1px;
 }
+.best-programs{
+    display: none;
+    animation: fadeEffect 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeEffect {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        display: block;
+        opacity: 1;
+    }
+}
 .weight-loss-container{
     display: flex;
     width: 90%;
@@ -364,7 +379,7 @@ main{
     height: 780px;
     display: flex;
     justify-content: space-between;
-    transform: translateY(-20px);
+    transform: translateY(-45px);
     /* border: 2px solid blue; */
 }
 .weight-loss-card-bg{
@@ -373,6 +388,19 @@ main{
     background: linear-gradient(139.69deg, rgba(238, 172, 0, 0.5) 36.23%, rgba(238, 172, 0, 0) 81.16%);
     border-radius: 25px;
     padding: 26px;
+    display: none;
+    animation: displayWeightLossCard 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes displayWeightLossCard {
+    0% {
+            opacity: 0;
+        }
+    
+        100% {
+            display: block;
+            opacity: 1;
+        }
 }
 .weight-loss-card{
     margin: auto;
@@ -431,6 +459,19 @@ main{
     background-color: hsla(0, 0%, 0%, 0.5);
     display: flex;
     justify-content: space-between;
+    display: none;
+    animation: displayWeightLossPlan 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes displayWeightLossPlan {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
 }
 .weight-loss-nutrition-plan{
     width: 412px;
@@ -463,12 +504,12 @@ main{
     width: 370px;
     margin: 20px auto;
 }
-.nutrition-plan-header{
+.weight-loss-nutrition-plan-header{
     position: relative;
     margin-bottom: 40px;
     /* padding-bottom: 2px; */
 }
-.nutrition-plan-header::after{
+.weight-loss-nutrition-plan-header::after{
     content: "";
     position: absolute;
     height: 3px;
