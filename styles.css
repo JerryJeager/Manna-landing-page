@@ -326,7 +326,7 @@ main{
 }
 #Our-best-programs-section{
     width: 100%;
-    height: 1900px;
+    height: 1700px;
     /* border: 2px solid red; */
 }
 .Our-best-programs{
@@ -638,5 +638,70 @@ main{
     transition-duration: .4s;
 }
 .read-more-btn button:hover{
+    text-decoration: underline;
+}
+#this-week-menu-section{
+    width: 100%;
+    height: 520px;
+    background-color: hsla(288, 3%, 3%, 0.7);
+}
+.this-week-menu-container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+.this-week-menu-info{
+    /* width: 540px; */
+    width: 50%;
+    margin-top: 50px;
+}
+.this-week-menu-info h2{
+    font-family: 'Jockey One', sans-serif;
+    color: hsla(43, 100%, 47%, 0.7);
+    font-weight: 400;
+    font-size: 60px;
+    margin-bottom: 20px;
+    /* line-height: 90px; */
+}
+.this-week-menu-info p{
+    font-family: 'Averia Sans Libre', cursive;
+    font-weight: 400;
+    font-size: 20px;
+    color:hsla(0, 0%, 100%, .8);
+    text-align: left;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+.this-week-menu-img{
+    /* width: 600px; */
+    width: 50%;
+    height: 100%;
+    /* border: 2px solid red; */
+}
+.this-week-menu-img img{
+    width: 100%;
+    max-width: 100%;
+    height: 600px;
+}
+.view-menu-btn button {
+    border: none;
+    color: hsla(0, 0%, 100%, 1);
+    font-family: 'Jockey One', sans-serif;
+    font-weight: 400;
+    border-radius: 25px;
+    width: 200px;
+    height: 65px;
+    font-size: 25px;
+    background-color: hsla(43, 100%, 47%, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: .4s;
+    margin-top: 30px;
+}
+
+.view-menu-btn button:hover {
     text-decoration: underline;
 }
