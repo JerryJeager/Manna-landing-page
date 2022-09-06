@@ -203,7 +203,7 @@ main{
     transform-origin: left;
     animation-name: display-underline;
     animation-fill-mode: forwards;
-    animation-duration: 2s;
+    animation-duration: 5s;
 }
 @keyframes display-underline{
     0%{
@@ -326,7 +326,7 @@ main{
 }
 #Our-best-programs-section{
     width: 100%;
-    height: 1500px;
+    height: 1900px;
     /* border: 2px solid red; */
 }
 .Our-best-programs{
@@ -504,12 +504,12 @@ main{
     width: 370px;
     margin: 20px auto;
 }
-.weight-loss-nutrition-plan-header{
+.styled-underlined-header{
     position: relative;
     margin-bottom: 40px;
     /* padding-bottom: 2px; */
 }
-.weight-loss-nutrition-plan-header::after{
+.styled-underlined-header::after{
     content: "";
     position: absolute;
     height: 3px;
@@ -538,4 +538,105 @@ main{
     margin-top: 40px;
     height: auto;
     /* border: 2px solid red; */
+}
+.eating-regular-meals-container{
+    width: 90%;
+    margin: 0 auto;
+}
+.eating-regular-meals-contents{
+    /* border: 2px solid blue; */
+    /* width: 1500px; */
+    height: 800px;
+    display: flex;
+    transform: translateY(-300px);
+}
+.eating-regular-meals-img{
+    width: 443px;
+    height: 338px;
+}
+.eating-regular-meals-img img{
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+    max-width: 100%;
+}
+.eating-regular-meals-info-bg{
+    width: 700px;
+    height: 450px;
+    background: linear-gradient(139.69deg, rgba(238, 172, 0, 0.5) 36.23%, rgba(238, 172, 0, 0) 81.16%);
+    border-radius: 25px;
+    align-self: flex-end;
+    display: none;
+    padding: 50px 30px;
+    overflow: visible;
+    transform: translateX(-170px);
+    animation: displayRegularMealsInfo 3s;
+}
+@keyframes displayRegularMealsInfo {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+.eating-regular-meals-info{
+    width: 620px;
+    height: 360px;
+    background-color: hsla(0, 0%, 23%, 1);
+    border-radius: 25px;
+    padding-left: 40px;
+    padding-top: 20px;
+    margin: 0 auto;
+}
+.eating-regular-meals-info-contents{
+    width: 500px;
+
+}
+.styled-underlined-header2 {
+    position: relative;
+    margin-bottom: 20px;
+}
+.styled-underlined-header2::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 59px;
+    margin-left: 8px;
+    background-color: hsla(43, 100%, 47%, 0.7);
+    border-radius: 2px;
+}
+.eating-regular-meals-info h2{
+    color: hsla(0, 0%, 100%, 1);
+    font-size: 30px;
+    font-family: 'Jockey One', sans-serif;
+    font-weight: 400;
+}
+.eating-regular-meals-info p{
+    font-size: 20px;
+    color: hsla(0, 0%, 100%, 0.8);
+    font-family: 'Averia Sans Libre', cursive;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.read-more-btn button{
+    border: none;
+    color:hsla(0, 0%, 100%, 1);
+    font-family: 'Jockey One', sans-serif;
+    font-weight: 400;
+    border-radius: 25px;
+    width: 200px;
+    height: 65px;
+    font-size: 25px;
+    background-color: hsla(43, 100%, 47%, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: .4s;
+}
+.read-more-btn button:hover{
+    text-decoration: underline;
 }

@@ -28,3 +28,4 @@ function flexedFadeEffect(heightLimit, className){
 window.addEventListener("scroll", function () { fadeEffect(800, "best-programs") })
 window.addEventListener("scroll", function(){fadeEffect(1000, "weight-loss-card-bg")})
 window.addEventListener("scroll", function(){flexedFadeEffect(1200, "weight-loss-plan")})
+window.addEventListener("scroll", function(){fadeEffect(1600, "eating-regular-meals-info-bg")})
