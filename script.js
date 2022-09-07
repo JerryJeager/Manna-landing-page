@@ -1,5 +1,9 @@
 const menuIcon = document.querySelector(".hamburger-menu")
 const navbar = document.querySelector(".navbar")
+const email = document.querySelector(".email")
+const error = document.querySelector(".error")
+let userEmail = email.value
+console.log(userEmail)
 // const header = document.querySelector(".header")
 let lastScrollTop = 0
 let scrollTop = window.pageYOffset || document.documentElement.scrollTop

@@ -7,6 +7,8 @@
 html, body{
     scroll-behavior: smooth;
     background-color: #f5f5f5;
+    width: 100%;
+    overflow-x: hidden;
     /* scroll-padding-top: var(--scroll-padding, 90px); */
 }
 header{
@@ -124,6 +126,7 @@ main{
     height: 1000px;
     position: relative;
     top: 20px;
+    margin-bottom: 40px;
 }
 .intro-bg{
     width: 944px;
@@ -150,13 +153,6 @@ main{
     width: 100%;
     height: 600px;
     display: flex;
-    justify-content: space-between;
-}
-.family-wrapper{
-    display: flex;
-    align-items: flex-end;
-    overflow: visible;
-    transform: translateX(-20px);
 }
 .healthy-eating{
     border-radius: 25px 25px 0  25px;
@@ -232,16 +228,19 @@ main{
     text-align: left;
 }
 .family{
-    width: 686px;
+    width: 660px;
     min-width: 182px;
     height: 485px;
     background: linear-gradient(315deg, transparent, hsla(43, 98%, 48%, 0.4));
     border-radius: 25px;
     padding: 33px 30px;
+    align-self: flex-end;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: visible;
+    transform: translateX(-20px);
 }
 .family-img{
     width: 100%;
@@ -327,6 +326,7 @@ main{
 #Our-best-programs-section{
     width: 100%;
     height: 1700px;
+    margin-top: 40px;
     /* border: 2px solid red; */
 }
 .Our-best-programs{
@@ -622,7 +622,7 @@ main{
     text-align: left;
     margin-bottom: 20px;
 }
-.read-more-btn button{
+.button button{
     border: none;
     color:hsla(0, 0%, 100%, 1);
     font-family: 'Jockey One', sans-serif;
@@ -637,7 +637,7 @@ main{
     align-items: center;
     transition-duration: .4s;
 }
-.read-more-btn button:hover{
+.button button:hover{
     text-decoration: underline;
 }
 #this-week-menu-section{
@@ -685,23 +685,68 @@ main{
     max-width: 100%;
     height: 600px;
 }
-.view-menu-btn button {
-    border: none;
-    color: hsla(0, 0%, 100%, 1);
-    font-family: 'Jockey One', sans-serif;
+#contact-us-section{
+    margin-top: 70px;
+    height: 700px;
+    width: 100%;
+    background: linear-gradient(rgba(7, 7, 7, 0.7), rgba(7, 7, 7, 0.7)),
+    url('./images/mana imgs including bgs/contactUsremovebg.png') center/cover no-repeat;
+}
+.contact-us-contents{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+form{
+    /* display: inline-block; */
+}
+form h2{
+    font-size: 60px;
     font-weight: 400;
+    font-family: 'Jockey One', sans-serif;
+    color: rgba(238, 172, 0, 0.7);
+    line-height: 50px;
+}
+input{
+    background-color: rgba(217, 217, 217, 0.7);
     border-radius: 25px;
-    width: 200px;
-    height: 65px;
-    font-size: 25px;
-    background-color: hsla(43, 100%, 47%, 0.7);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition-duration: .4s;
+    height: 70px;
+    width: 600px;
+    padding-left: 30px;
+    border: none;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Averia Sans Libre', cursive;
+    color: rgba(0, 0, 0, 0.7);
+}
+input::placeholder{
+    color: rgba(0, 0, 0, 0.7);
+}
+textarea{
+    background-color: rgba(217, 217, 217, 0.7);
+    border-radius: 25px;
+    width: 600px;
+    height: 130px;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Averia Sans Libre', cursive;
+    padding-left: 30px;
+    padding-top: 20px;
     margin-top: 30px;
 }
-
-.view-menu-btn button:hover {
-    text-decoration: underline;
+textarea::placeholder{
+    color: rgba(0, 0, 0, 0.7);
+}
+.send-message-btn{
+    margin-top: 30px;
+}
+.send-message-btn button:hover{
+    text-decoration: none;
+    background: hsla(0, 0%, 100%, 1);
+    color: hsla(43, 100%, 47%, 0.7);
+    border: 4px solid hsla(43, 100%, 47%, 0.7);
 }
