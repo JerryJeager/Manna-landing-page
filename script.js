@@ -48,13 +48,18 @@ submit.addEventListener("click", function (evt) {
         if (emailExtension.join('') == "moc.") {
             return true
         } else {
-            error.textContent = "!invalid email address."
+            error.textContent = "invalid email address!"
             evt.preventDefault()
             return false
         }
     }
-    else {
+    else if(emailAddress.includes("@") == false && emailAddress.length > 0) {
         error.textContent = "invalid email address!"
+        evt.preventDefault()
+        return false
+    }
+    else {
+        error.textContent = "Please fill in your email address!"
         evt.preventDefault()
         return false
     }
