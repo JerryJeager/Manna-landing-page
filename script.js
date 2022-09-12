@@ -17,8 +17,12 @@ let scrollTop = window.pageYOffset || document.documentElement.scrollTop
     lastScrollTop = scrollTop
 })*/
 menuIcon.addEventListener("click", () => {
+    menuIcon.style.position = "fixed"
     navbar.classList.toggle("change")
     document.querySelector(".links").classList.toggle("change")
+    if (document.querySelector(".links").classList.contains("change") == false) {
+        menuIcon.style.position = "sticky"
+    }
 })
 function fadeEffect(heightLimit, className) {
     if (document.body.scrollTop > heightLimit || document.documentElement.scrollTop > heightLimit) {

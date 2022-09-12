@@ -22,13 +22,9 @@ body {
 
 header {
     background-color: #ffffff;
-    height: 91px;
     width: 100%;
     padding-top: .8em;
     padding-bottom: .4em;
-    /* position: fixed; */
-    /* top: 0; */
-    z-index: 10;
 }
 
 #header-contents {
@@ -38,21 +34,14 @@ header {
     justify-content: space-between;
 }
 
-#logo {
-    width: 129px;
-    height: 60px;
-}
-
 #logo img {
     max-width: 100%;
-    width: 100%;
-    height: inherit;
 }
 
 .hamburger-menu {
     position: sticky;
     right: 73px;
-    top: 1rem;
+    top: 1.7rem;
     width: 30px;
     height: 20px;
     display: flex;
@@ -104,10 +93,8 @@ header {
     top: 0;
     transition: .6s;
     padding-top: 2.5em;
-
     display: flex;
     flex-direction: column;
-
     align-items: center;
     z-index: 5;
 }
@@ -118,12 +105,13 @@ header {
 }
 
 .nav-link {
-    color: #070707;
+    color: hsla(0, 0%, 23%, 1);
     text-decoration: none;
     font-size: 1.1rem;
-    text-align: right;
+    font-family: 'Averia Sans Libre', cursive;
+    font-weight: 400;
     position: relative;
-    padding: 3px 0;
+    padding:  .5em 0;
 }
 
 .nav-link::after,
@@ -131,7 +119,7 @@ header {
     content: "";
     background-color: #eeac00;
     width: 100%;
-    height: 2p;
+    height: 2px;
     transition: .5s;
     position: absolute;
     right: 0;
@@ -916,4 +904,85 @@ textarea::placeholder {
 
 .get-started-btn{
     margin-top: 3em;
+}
+
+footer{
+    width: 100%;
+    background-color: hsla(0, 0%, 0%, 0.7);
+    margin-top: 4.38rem;
+    padding-top: 4em;
+    padding-bottom: .6em;
+}
+
+.footer-contents{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.footer-logo{
+    width: 50%;
+}
+.footer-logo p{
+    width: 80%;
+    text-align: left;
+    color: hsla(0, 0%, 100%, 0.8);
+    font-family: 'Averia Sans Libre', cursive;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+}
+
+.footer-logo img{
+    filter: brightness(0) invert(1);
+    transform: scale(0.7);
+    margin-left: -2.3em;
+    text-align: left;
+}
+
+.contact-and-navigation{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    height: 300px;
+    color: hsla(0, 0%, 100%, 1);
+    font-family: 'Averia Sans Libre', cursive;
+    font-size: 1.25rem;
+}
+
+.contact{
+    width: 40%;
+}
+
+.navigation{
+    width: 40%;
+    justify-self: flex-end;
+}
+.contact-and-navigation h5{
+    margin-bottom: 1.1em;
+    font-weight: 400;
+}
+
+.contact p{
+    margin-top: 1.2em;
+    text-align: left;
+    font-weight: 400;
+}
+
+.navigation a{
+    margin-top: 1.2em;
+    text-align: left;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 1);
+    text-decoration: none;
+    transition: .8s;
+    display: block;
+}
+
+.navigation a:hover{
+    text-decoration: underline;
+}
+
+.copyright{
+    margin-top: 8em;
 }
