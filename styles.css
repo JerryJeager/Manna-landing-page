@@ -887,8 +887,7 @@ textarea::placeholder {
 }
 
 .get-started-info{
-    padding-top: 3rem;
-    padding-left: 2rem;
+    padding: 3rem 0 2rem 2rem;
     width: 50%;
 }
 

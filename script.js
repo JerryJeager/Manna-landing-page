@@ -24,20 +24,15 @@ menuIcon.addEventListener("click", () => {
         menuIcon.style.position = "sticky"
     }
 })
-function fadeEffect(heightLimit, className) {
+function fadeEffect(heightLimit, className, displayType) {
     if (document.body.scrollTop > heightLimit || document.documentElement.scrollTop > heightLimit) {
-        document.querySelector(`.${className}`).style.display = "block"
+        document.querySelector(`.${className}`).style.display = `${displayType}`
     }
 }
-function flexedFadeEffect(heightLimit, className) {
-    if (document.body.scrollTop > heightLimit || document.documentElement.scrollTop > heightLimit) {
-        document.querySelector(`.${className}`).style.display = "flex"
-    }
-}
-window.addEventListener("scroll", function () { fadeEffect(800, "best-programs") })
-window.addEventListener("scroll", function () { fadeEffect(1000, "weight-loss-card-bg") })
-window.addEventListener("scroll", function () { flexedFadeEffect(1200, "weight-loss-plan") })
-window.addEventListener("scroll", function () { fadeEffect(1600, "eating-regular-meals-info-bg") })
+window.addEventListener("scroll", function () { fadeEffect(800, "best-programs", "block") })
+window.addEventListener("scroll", function () { fadeEffect(1000, "weight-loss-card-bg", "block") })
+window.addEventListener("scroll", function () { fadeEffect(1200, "weight-loss-plan", "flex") })
+window.addEventListener("scroll", function () { fadeEffect(1600, "eating-regular-meals-info-bg", "block") })
 submit.addEventListener("click", function (evt) {
     let email = document.querySelector(".email").value
     let emailAddress = []
