@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -122,12 +123,16 @@
         <div class="Our-best-programs">
             <div class="best-programs-contents">
                 <div class="best-programs-img">
-                    <h3 class="best-programs">Our Best Programs</h3>
+                    <h3 data-aos="fade-up"
+                    data-aos-duration="500"
+                    data-aos-once="true">Our Best Programs</h3>
                 </div>
             </div>
             <div class="weight-loss-container">
                 <div class="weight-loss">
-                    <div class="weight-loss-card-bg">
+                    <div class="weight-loss-card-bg" data-aos="fade-right"
+                    data-aos-duration="500"
+                    data-aos-once="true">
                         <div class="weight-loss-card">
                             <div class="weight-loss-programs">
                                 <h2>Best Weight Loss Programs for 2022</h2>
@@ -140,7 +145,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="weight-loss-plan">
+                    <div class="weight-loss-plan" data-aos="fade-left"
+                    data-aos-duration="500"
+                    data-aos-once="true"
+                    data-aos-delay="250">
                         <div class="weight-loss-nutrition-plan">
                             <div class="weight-loss-nutrition-plan-img">
                                 <div class="play">
@@ -178,10 +186,15 @@
         </div>
         <div class="eating-regular-meals-container">
             <div class="eating-regular-meals-contents">
-                <div class="eating-regular-meals-img">
+                <div class="eating-regular-meals-img"
+                data-aos="fade-right"
+                    data-aos-duration="500"
+                    data-aos-once="true">
                     <img src="images/mana imgs including bgs/regularMealsImprovedquality.png" alt="regular-meals-image">
                 </div>
-                <div class="eating-regular-meals-info-bg">
+                <div class="eating-regular-meals-info-bg" data-aos="fade-left"
+                    data-aos-duration="500"
+                    data-aos-once="true">
                     <div class="eating-regular-meals-info">
                         <div class="eating-regular-meals-info-contents">
                             <div class="styled-underlined-header2">
@@ -209,7 +222,7 @@
                 <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
                     alteration in some form,
                     by injected humour, or randomised words which don't look even slightly believable. If you are
-                    going .</p>
+                    going.</p>
                 <div class="view-menu-btn underline-txt-btn button">
                     <button>VIEW MENU</button>
                 </div>
@@ -273,6 +286,8 @@
         </div>
     </footer>
     <script src="script.js"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
 </body>
 
 </html>

@@ -447,21 +447,8 @@ p {
     background: linear-gradient(139.69deg, rgba(238, 172, 0, 0.5) 36.23%, rgba(238, 172, 0, 0) 81.16%);
     border-radius: 25px;
     padding: 26px;
-    display: none;
-    animation: displayWeightLossCard 3s;
-    animation-fill-mode: forwards;
 }
 
-@keyframes displayWeightLossCard {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        display: block;
-        opacity: 1;
-    }
-}
 
 .weight-loss-card {
     margin: auto;
@@ -528,25 +515,11 @@ p {
     background-color: hsla(0, 0%, 0%, 0.5);
     display: flex;
     justify-content: space-between;
-    display: none;
-    animation: displayWeightLossPlan 3s;
-    animation-fill-mode: forwards;
 }
 
-@keyframes displayWeightLossPlan {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        display: block;
-        opacity: 1;
-    }
-}
 
 .weight-loss-nutrition-plan {
     width: 412px;
-    /* border: 2p solid orange; */
 }
 
 .weight-loss-nutrition-plan-img {
@@ -651,22 +624,15 @@ p {
     background: linear-gradient(139.69deg, rgba(238, 172, 0, 0.5) 36.23%, rgba(238, 172, 0, 0) 81.16%);
     border-radius: 25px;
     align-self: flex-end;
-    display: none;
     padding: 50px 30px;
     overflow: visible;
-    transform: translateX(-170px);
-    animation: displayRegularMealsInfo 3s;
+    position: relative;
+    right: 170px;
+    animation-fill-mode: forwards;
 }
 
-@keyframes displayRegularMealsInfo {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        display: block;
-        opacity: 1;
-    }
+body[data-aos = "fade-left"]{
+    transform: translateX(-370px);
 }
 
 .eating-regular-meals-info {
